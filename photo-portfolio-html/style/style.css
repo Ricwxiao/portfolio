@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&family=Quicksand:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 5em;
+    text-align: center;
+}
+
+nav {
+    position: sticky;
+    top: 5px;
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+nav li {
+    flex: auto;
+}
+
+nav li:hover ~ .cursor {
+    transform: ;
+}
+
+a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+a:hover {
+    font-weight: 700;
+}
+
+.cursor {
+    position: fixed;
+    width: 50px;
+    height: 10vh;
+    background-color: #fff;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: #000000 solid ;
+    overflow: auto;
+}
+
+img {
+    max-width: 90vw;
+}
