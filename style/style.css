@@ -71,7 +71,7 @@ a:hover {
 
 .home-body {
     background-image: url("../img/Portrait-Enhanced-NR.jpg");
-    background-size: contain;
+    background-size: 100vw;
 }
 
 .container {
