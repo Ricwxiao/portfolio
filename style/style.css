@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&family=Quicksand:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -8,8 +9,11 @@ body {
 
 h1 {
     font-weight: 400;
-    font-size: 5em;
-    text-align: center;
+    font-size: 3em;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10vw;
+    color: #fff;
 }
 
 nav {
@@ -33,9 +37,9 @@ nav li {
     flex: auto;
 }
 
-nav li:hover ~ .cursor {
-    transform: ;
-}
+/* nav li:hover ~ .cursor {
+    transform: 0;
+} */
 
 a {
     display: block;
@@ -58,6 +62,16 @@ a:hover {
     transform: translate(-50%, -50%);
     mix-blend-mode: difference;
 
+}
+
+.vital {
+    color: #0A6AB0;
+    font-weight: bold;
+}
+
+.home-body {
+    background-image: url("../img/Portrait-Enhanced-NR.jpg");
+    background-size: contain;
 }
 
 .container {
