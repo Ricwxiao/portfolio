@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 28px;
     background-color: aliceblue;
     margin: 0;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
 }
 
 nav {
@@ -57,10 +61,6 @@ footer p {
     text-align: right;
 }
 
-img {
-    max-width: 90vw;
-}
-
 .big-intro {
     font-size: 2em;
     text-align: left;
@@ -74,22 +74,21 @@ img {
     margin-right: 10vw;
 }
 
-.big-intro div:hover {
-    transform: scale(1.1);
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.2);
+.big-intro div {
     padding-top: .5em;
     padding-bottom: .5em;
+}
+
+.big-intro div:hover {
+    transform: scale(1.2);
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
 .vital {
     color: #0A6AB0;
     font-weight: bold;
-}
-
-main .vital:hover {
-    transform: scale(1.2);
 }
 
 .home-container {
@@ -124,4 +123,26 @@ main .vital:hover {
     background-color: aqua;
     border: #000000 solid ;
     overflow: auto;
+}
+
+.design-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.design-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    justify-content: center;
+}
+
+.design-box {
+    width: 80vw;
+}
+
+.design-box img {
+    max-width: 80vw;
 }
