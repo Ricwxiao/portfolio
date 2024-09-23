@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&family=Quicksand:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+:root {
+    --bgclr: #2E86AB;
+    --primclr: #E4113F;
+}
+
+html {
+    background-color: var(--bgclr);
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 28px;
     background-color: aliceblue;
-    margin: 0;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -32,7 +42,7 @@ nav ul {
     flex-direction: row;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: var(--bgclr);
 }
 
 nav li {
@@ -46,12 +56,17 @@ nav a {
     text-align: center;
 }
 
+nav .curr-tab {
+    border-bottom: var(--primclr) solid 5px;
+    padding-bottom: 5px;
+}
+
 nav a:hover {
     font-weight: 700;
 }
 
 footer {
-    background-color: #000000;
+    background-color: var(--bgclr);
     margin-top: 2em;
     z-index: 100;
 }
@@ -90,7 +105,7 @@ footer p {
 }
 
 .vital {
-    color: #0A6AB0;
+    color: var(--primclr);
     font-weight: bold;
 }
 
@@ -101,7 +116,8 @@ footer p {
 }
 
 .portrait {
-    max-width: 50vw;
+    min-width: 100px;
+    max-width: 400px;
     border-radius: 10000px;
     margin-top: 2em;
 }
